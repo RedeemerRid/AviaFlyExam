@@ -18,12 +18,18 @@
     <ClCompile Include="..\Classes\Flight.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\mainOper.cpp">
+    <ClCompile Include="mainOper.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Ticket.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\Flight.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Ticket.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

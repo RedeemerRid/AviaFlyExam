@@ -1,5 +1,14 @@
-#include "..\\Classes\Flight.h"
 
+#include <iostream>
+#include <string>
+#include <map>
+#include <fstream>
+#include <algorithm>
+#include "..\\Classes\Flight.h"
+#include "..\\Classes\Ticket.h"
+
+
+using namespace std;
 
 int main() {
 
@@ -46,6 +55,7 @@ int main() {
 				cin >> exit;
 				break;
 			case 1:
+				
 			    f.addFlight();
 			    break;
 		    case 2:
@@ -67,6 +77,6 @@ int main() {
 	
 
 	
-
+	
 	return 0;
 }

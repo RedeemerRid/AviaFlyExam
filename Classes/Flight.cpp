@@ -1,6 +1,8 @@
+
 #include "..\\Classes\Flight.h"
+#include "..\\Classes\Ticket.h"
 
-
+using namespace std;
 
 
 template <class T>
@@ -190,7 +192,7 @@ void Flight::print() {
 }
 
 void Flight::OutToFile() {
-	ofstream ft("1.txt");
+	ofstream ft("..\\db\\flights.txt");
 	if (!allFlight.empty()) {
 		for (auto it = allFlight.begin(); it != allFlight.end(); ++it) {
 			ft << it->first << endl;
@@ -212,13 +214,13 @@ void Flight::OutToFile() {
 		}
 	}
 	else
-		cout << "empty" << endl;
+		cout << "emptyOut" << endl;
 	ft.close();
 }
 
 void Flight::InToFlight() {
 	flight* f;
-	ifstream ft("1.txt");
+	ifstream ft("..\\db\\flights.txt");
 
 	if (ft) {
 		while (!ft.eof()) {
@@ -249,6 +251,10 @@ void Flight::InToFlight() {
 		}
 	}
 	else
-		cout << "empty" << endl;
+		cout << "emptyIn" << endl;
 	ft.close();
+}
+
+map<string, Flight::flight> Flight::get_flight() {
+	return allFlight;
 }
