@@ -1,6 +1,8 @@
 #include "..\\Classes\Flight.h"
 
 
+
+
 template <class T>
 void getValue(string prompt, T& value)
 {
@@ -15,7 +17,7 @@ void getValue(string prompt, T& value)
 		cout << prompt;
 		
 		cin >> value;
-		
+
 	}
 	string endLine;
 	getline(cin, endLine);

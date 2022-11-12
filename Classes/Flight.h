@@ -31,7 +31,6 @@ struct flight {
 	int countSeats;
 };
 class Flight {
-
 	map<string, flight> allFlight;
 
 public:
@@ -44,6 +43,8 @@ public:
 	void print();
 	void OutToFile();
 	void InToFlight();
+
+	
 
 };
 

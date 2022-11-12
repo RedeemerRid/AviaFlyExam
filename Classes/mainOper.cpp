@@ -1,7 +1,11 @@
 #include "..\\Classes\Flight.h"
 
+
 int main() {
 
+	
+
+	
 	bool exit = true;
 
 	int press;
@@ -62,7 +66,7 @@ int main() {
 	f.print();
 	
 
-
+	
 
 	return 0;
 }
