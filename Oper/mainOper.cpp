@@ -6,6 +6,7 @@
 #include <algorithm>
 #include "..\\Classes\Flight.h"
 #include "..\\Classes\Ticket.h"
+#include "..\\Classes\cities.h"
 
 
 using namespace std;

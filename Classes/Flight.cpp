@@ -1,6 +1,7 @@
 
 #include "..\\Classes\Flight.h"
 #include "..\\Classes\Ticket.h"
+#include "..\\Classes\cities.h"
 
 using namespace std;
 
@@ -255,6 +256,6 @@ void Flight::InToFlight() {
 	ft.close();
 }
 
-map<string, Flight::flight> Flight::get_flight() {
+map<string, flight> Flight::get_flight() {
 	return allFlight;
 }

@@ -4,8 +4,9 @@
 #include <map>
 #include <fstream>
 #include <algorithm>
+#include <set>
 
-#include "..\\Classes\Ticket.h"
+
 
 using namespace std;
 
@@ -24,18 +25,8 @@ public:
 	Ticket() {}
 	~Ticket(){}
 
-	void InToTicket() {
-		Flight fly;
-		//fly.get_flight();
-		//fly.InToFlight();
+	void InToTicket(); 
 
-		fly.print();
-		
-		
-		
-		
-	}
-
-	
+	void town(); 
 
 };

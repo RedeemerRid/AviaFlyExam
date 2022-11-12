@@ -6,31 +6,31 @@
 #include <algorithm>
 
 using namespace std;
+struct date {
+	int day;
+	int month;
+	int year;
+};
 
+struct times {
+	int hour;
+	int min;
+	int sec;
+};
+
+struct flight {
+	string numFlight;
+	string pointSrc;
+	string pointDst;
+	date dateFlight;
+	times timeUp;
+	times timeDown;
+	string typeAirplane;
+	double costTicket;
+	int countSeats;
+};
 class Flight {
-	struct date {
-		int day;
-		int month;
-		int year;
-	};
-
-	struct times {
-		int hour;
-		int min;
-		int sec;
-	};
-
-	struct flight {
-		string numFlight;
-		string pointSrc;
-		string pointDst;
-		date dateFlight;
-		times timeUp;
-		times timeDown;
-		string typeAirplane;
-		double costTicket;
-		int countSeats;
-	};
+	
 	map<string, flight> allFlight;
    
 public:
