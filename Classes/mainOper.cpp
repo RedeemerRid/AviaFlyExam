@@ -10,10 +10,15 @@ int main() {
 	//f.addFlight();
 	//f.addFlight();
 	//f.addFlight
-	f.InToFlight();
-	f.OutToFile();
+	//f.InToFlight();
+	//f.OutToFile();
+	//f.print();
+	//f.editFlight();
+	//f.print();
+	//f.delFlight();
 	f.print();
-	f.editFlight();
+	f.addFlight();
+	f.delFlight();
 	f.print();
 
 

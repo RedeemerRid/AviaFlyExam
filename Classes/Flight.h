@@ -40,12 +40,16 @@ inline void getValue<int>(string prompt, int& value)
 {
 	cout << prompt;
 	cin >> value;
+	cin.ignore();
 }
 template <>
 inline void getValue<double>(string prompt, double& value)
 {
-	cout << prompt;
+	
+	cout << prompt;		
 	cin >> value;
+	cin.ignore();
+	
 }
 
 
@@ -65,7 +69,9 @@ class Flight {
 	map<string, flight> allFlight;
 
 public:
-	Flight() {}
+	Flight() {
+		InToFlight();	
+	}
 	~Flight() {
 		OutToFile();
 	}
@@ -97,7 +103,6 @@ public:
 		if (!allFlight.empty()) {
 			Flight::print();
 			cout << endl;
-
 
 			flight f1;
 			string edit_flight, exit;
@@ -157,35 +162,40 @@ public:
 			allFlight.erase(allFlight.find(edit_flight));
 			allFlight[f1.numFlight] = f1;
 
-
-
 			cout << endl;
-
 		}
 		else {
 			cout << "empty" << endl;
-
 		}
+	}
+
+	void delFlight() {
+
+		string del_flight;
+		Flight::print();
+		getValue("select Flight what you want delete : ", del_flight);
+		allFlight.erase(del_flight);
 
 	}
 
 	void print() {
 		for (auto it = allFlight.begin(); it != allFlight.end(); ++it) {
 			cout << it->first << "\t" << (it->second).numFlight << endl << "\t" << (it->second).pointSrc
-				<< endl << "\t" << (it->second).pointDst << endl << "\t" << (it->second).timeUp
+				<< endl << "\t" << (it->second).pointDst << endl << "\t" << (it->second).dateFlight << endl << "\t" << (it->second).timeUp
 				<< endl << "\t" << (it->second).timeDown << endl << "\t" << (it->second).typeAirplane
 				<< endl << "\t" << (it->second).costTicket << endl << "\t" << (it->second).countSeats << endl;
 		}
 	}
 
 	void OutToFile() {
-		ofstream ft("2.txt");
+		ofstream ft("1.txt");
 		if (!allFlight.empty()) {
 			for (auto it = allFlight.begin(); it != allFlight.end(); ++it) {
 				ft << it->first << endl;
 				ft << (it->second).numFlight << endl;
 				ft << (it->second).pointSrc << endl;
 				ft << (it->second).pointDst << endl;
+				ft << (it->second).dateFlight << endl;
 				ft << (it->second).timeUp << endl;
 				ft << (it->second).timeDown << endl;
 				ft << (it->second).typeAirplane << endl;
@@ -208,17 +218,20 @@ public:
 				flight* ff;
 				string x;
 				ft >> x;
-				ft >> f->numFlight;
-				ft >> f->pointSrc;
-				ft >> f->pointDst;
-				ft >> f->dateFlight;
-				ft >> f->timeUp;
-				ft >> f->timeDown;
-				ft >> f->typeAirplane;
-				ft >> f->costTicket;
-				ft >> f->countSeats;
-				ff = f;
-				allFlight[ff->numFlight] = *ff;
+				if (!x.empty()) {
+					
+					ft >> f->numFlight;
+					ft >> f->pointSrc;
+					ft >> f->pointDst;
+					ft >> f->dateFlight;
+					ft >> f->timeUp;
+					ft >> f->timeDown;
+					ft >> f->typeAirplane;
+					ft >> f->costTicket;
+					ft >> f->countSeats;
+					ff = f;
+					allFlight[ff->numFlight] = *ff;
+				}
 			}
 		}
 		else
