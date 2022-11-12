@@ -1,8 +1,4 @@
 #include "..\\Classes\Flight.h"
-#include <iostream>
-#include <string>
-#include <map>
-#include <fstream>
 
 int main() {
 
@@ -11,6 +7,7 @@ int main() {
 	int press;
 		
 	Flight f;
+	
 
 	do
 
@@ -62,7 +59,7 @@ int main() {
 	} while (exit != 0);
 	
 	
-	
+	f.print();
 	
 
 
