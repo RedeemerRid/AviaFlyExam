@@ -29,7 +29,8 @@ public:
 	void InToTicket(); 
 
 	void town(); 
-	void listUpFlight();
+	string listUpFlight();
+	string listDownFlight();
 	void print();
 	void listUpDownFlight();
 };
