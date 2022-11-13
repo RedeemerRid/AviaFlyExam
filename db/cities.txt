@@ -1,3 +1,7 @@
-qwerty
-asdfgh
-zxcvbn
+amsterdam
+monaco
+nalchik
+ny
+paris
+perm
+saratov

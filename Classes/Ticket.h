@@ -19,14 +19,17 @@ struct passanger {
 };
 
 class Ticket {
-	
+	set<string> city_name;
+	map<string, flight> mmm;
 	map<int, passanger> mtPassanger;
 public:
-	Ticket() {}
-	~Ticket(){}
+	Ticket();
+	~Ticket();
 
 	void InToTicket(); 
 
 	void town(); 
-
+	void listUpFlight();
+	void print();
+	void listUpDownFlight();
 };

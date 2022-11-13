@@ -6,12 +6,8 @@
 using namespace std;
 
 int main() {
-
 	Ticket ttt;
-	ttt.InToTicket();
-
-
-	ttt.town();
+	ttt.listUpDownFlight();
 
 	return 0;
 }

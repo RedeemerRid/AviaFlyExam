@@ -6,7 +6,7 @@
 using namespace std;
 class city {
 	set<string> name_city;
-	string file_name = "..\\db\\cities.txt";
+	
 public:
 	city();
 	void addCity();

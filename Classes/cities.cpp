@@ -40,7 +40,7 @@ void city::delCity() {
 }
 
 void city::inToFileC() {
-	ifstream is(file_name);
+	ifstream is("..\\db\\cities.txt");
 	string temp_name;
 	if (is) {
 		while (!is.eof()) {
@@ -56,7 +56,7 @@ void city::save() {
 	ofstream os("..\\db\\cities.txt");
 	if (os) {
 		for (auto it = name_city.begin(); it != name_city.end(); ++it) {
-			os << *it;
+			os << *it << endl;
 		}
 	}
 	else
