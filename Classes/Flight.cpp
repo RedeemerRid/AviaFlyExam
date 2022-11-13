@@ -271,12 +271,12 @@ void Flight::InToFlight() {
 map<string, flight> Flight::get_flight() {
 	return allFlight;
 }
-
+/*
 void Flight::TicketPrint() {
 	
 
 }
-/*
+
 void Flight::inToUsers() {
 	users suser;
 	users_m = suser.getUser();

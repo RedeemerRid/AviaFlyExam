@@ -32,7 +32,7 @@ struct flight {
 class Flight {
 	//map<string, string> users_m;
 	map<string, flight> allFlight;
-	map<string, passanger> usersTick;
+	//map<string, passanger> usersTick;
    
 public:
 	Flight();	
@@ -45,7 +45,7 @@ public:
 	void print();
 	
 	void InToFlight();
-	void TicketPrint();
+	//void TicketPrint();
 
 	//void inToUsers();
 

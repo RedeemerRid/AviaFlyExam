@@ -2,7 +2,7 @@
 #include "..\\Classes\Ticket.h"
 #include "..\\Classes\cities.h"
 #include "..\\Classes\user.h"
-
+/*
 using namespace std;
 
 Ticket::Ticket() {
@@ -98,3 +98,4 @@ void Ticket::listUpDownFlight() {
 
 
 }
+*/

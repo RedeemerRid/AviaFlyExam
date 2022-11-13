@@ -7,9 +7,9 @@
 using namespace std;
 
 int main() {
-	
+	/*
 	Ticket ttt;
 	ttt.listUpDownFlight();
-	
+	*/
 	return 0;
 }

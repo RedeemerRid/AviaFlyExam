@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <set>
 
-
+/*
 
 using namespace std;
 
@@ -60,4 +60,4 @@ public:
 	map<string, passanger> getMtPas() {
 		return mtPassanger;
 	}
-};
+};*/
