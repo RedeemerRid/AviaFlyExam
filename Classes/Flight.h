@@ -48,6 +48,8 @@ public:
 	void inToUsers();
 
 	map<string, flight> get_flight();
+	map<string, string> get_users_m();
+
 
 	
 

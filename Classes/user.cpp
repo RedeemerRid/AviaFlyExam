@@ -3,6 +3,9 @@
 #include "..\\Classes\Ticket.h"
 #include "..\\Classes\cities.h"
 
+using namespace std;
+
+
 string login, password;
 
 users::users() {
@@ -84,9 +87,8 @@ void users::saveuser_to_db(map <string, string>) {
 
 void users::InToFLightsUs() {
 
-	Flight fly;
-	fly.print();
-	mUser = fly.get_flight();
+	Flight fly1;
+	userM = fly1.get_flight();
 }
 
 map<string, string> users::getUser() {

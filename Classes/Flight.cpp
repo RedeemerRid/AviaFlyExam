@@ -42,6 +42,7 @@ void getValue<string>(string prompt, string& value)
 
 Flight::Flight() {
 	InToFlight();
+	inToUsers();
 }
 Flight::~Flight() {
 	OutToFile();
@@ -274,4 +275,12 @@ map<string, flight> Flight::get_flight() {
 void Flight::inToUsers() {
 	users suser;
 	users_m = suser.getUser();
+	
+	
 }
+
+map<string, string> Flight::get_users_m() {
+	return users_m;
+}
+
+

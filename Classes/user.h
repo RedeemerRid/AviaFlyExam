@@ -1,16 +1,21 @@
 #pragma once
-#include <map>
-#include <string>
-#include <fstream>
 #include <iostream>
+#include <string>
+#include <map>
+#include <fstream>
+#include <algorithm>
+#include <set>
 
 
 
 using namespace std;
 
+
+
+
 class users
 {
-	map<string, flight> mUser;
+	map<string, flight> userM;
 	map<string, string> m_users;
 	const string m_filename = "db\\users.txt";
 public:
