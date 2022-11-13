@@ -12,14 +12,7 @@ Ticket::~Ticket() { }
 void Ticket::InToTicket() {
 	Flight fly;
 	mmm = fly.get_flight();
-	/*
-	auto it = mmm.begin();
-	for (it; it != mmm.end(); ++it)
-		cout << it->first << "\t" << it->second.numFlight << endl;
-	*/
-
-
-
+	
 }
 
 
