@@ -30,8 +30,9 @@ struct flight {
 	int countSeats;
 };
 class Flight {
-	map<string, string> users_m;
+	//map<string, string> users_m;
 	map<string, flight> allFlight;
+	map<string, passanger> usersTick;
    
 public:
 	Flight();	
@@ -44,11 +45,12 @@ public:
 	void print();
 	
 	void InToFlight();
+	void TicketPrint();
 
-	void inToUsers();
+	//void inToUsers();
 
 	map<string, flight> get_flight();
-	map<string, string> get_users_m();
+	//map<string, string> get_users_m();
 
 
 	

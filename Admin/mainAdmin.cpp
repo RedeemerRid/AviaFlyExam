@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
 
-	city cc;
+	//city cc;
 
 	return 0;
 }

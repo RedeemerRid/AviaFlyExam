@@ -5,13 +5,8 @@
 #include <fstream>
 #include <algorithm>
 #include <set>
-
-
-
+/*
 using namespace std;
-
-
-
 
 class users
 {
@@ -44,3 +39,5 @@ public:
 	map<string, string> getUser();
 	~users();
 };
+
+*/

@@ -4,6 +4,7 @@
 #include <map>
 #include <fstream>
 #include <algorithm>
+#include <set>
 #include "..\\Classes\Flight.h"
 #include "..\\Classes\Ticket.h"
 #include "..\\Classes\cities.h"
@@ -13,10 +14,11 @@
 using namespace std;
 
 int main() {
+	/*
 	Flight f;
-
 	
-	if (f.get_users_m().empty()) {
+		
+	if (!f) {
 		cout << "empty Flight" << endl;
 	}
 	else {
@@ -55,8 +57,8 @@ int main() {
 			}
 		} while (y);
 
-
-
+		*/
+		Flight f;
 		bool exit = true;
 
 		int press;
@@ -75,21 +77,15 @@ int main() {
 
 
 			while (!isdigit(char(cin.peek())))
-
 			{
-
 				system("cls");
-
 				cin.ignore();
-
 				cout << "select  0  -  exit : " << endl;
 				cout << "select  1  -  add to flight : " << endl;
 				cout << "select  2  -  eddit to flight : " << endl;
 				cout << "select  3  -  delete to flight : " << endl;
 				cout << "select  4  -  viuwer to list passager in flight : " << endl;
-
 			}
-
 			cin >> press;
 			switch (press) {
 			case 0:
@@ -118,7 +114,7 @@ int main() {
 		f.print();
 
 
-	}
+	
 	
 	return 0;
 }

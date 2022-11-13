@@ -12,7 +12,6 @@ using namespace std;
 
 
 struct passanger {
-	int numTicket;
 	string fio;
 	string birthday;
 	string numOfFlight;
@@ -21,7 +20,7 @@ struct passanger {
 class Ticket {
 	set<string> city_name;
 	map<string, flight> mmm;
-	map<int, passanger> mtPassanger;
+	map<string, passanger> mtPassanger;
 public:
 	Ticket();
 	~Ticket();
@@ -33,4 +32,32 @@ public:
 	string listDownFlight();
 	void print();
 	void listUpDownFlight();
+
+	void saveToPROG() {
+		ifstream in("..\\db\\ticket.txt");
+		if (in) {
+			while(!in.eof()){
+				string x;
+				passanger* pasman;
+				passanger* ppss;
+				pasman = new passanger;
+			
+				in >> pasman->numOfFlight;
+				x = pasman->numOfFlight;
+				in >> pasman->fio;
+				in >> pasman->birthday;
+
+				ppss = pasman;
+				mtPassanger[x] = *ppss;
+
+			}
+		}
+		else
+			cout << "emptyOut" << endl;
+		in.close();
+	}
+
+	map<string, passanger> getMtPas() {
+		return mtPassanger;
+	}
 };
