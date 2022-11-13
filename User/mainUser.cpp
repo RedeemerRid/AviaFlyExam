@@ -1,6 +1,7 @@
 #include "..\\Classes\Flight.h"
 #include "..\\Classes\Ticket.h"
 #include "..\\Classes\cities.h"
+#include "..\\Classes\user.h"
 
 
 using namespace std;

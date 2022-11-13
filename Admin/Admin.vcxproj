@@ -128,10 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\cities.cpp" />
+    <ClCompile Include="..\Classes\user.cpp" />
     <ClCompile Include="mainAdmin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\cities.h" />
+    <ClInclude Include="..\Classes\user.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
