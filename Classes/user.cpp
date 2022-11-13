@@ -4,6 +4,7 @@
 #include "..\\Classes\cities.h"
 
 string login, password;
+
 users::users() {
 	InToFLightsUs();
 	ifstream f(m_filename);
@@ -67,7 +68,6 @@ void users::edituser() {
 	}
 	else
 		cout << "There is no such user";
-	
 }
 
 void users::viewuser() {
@@ -86,8 +86,11 @@ void users::InToFLightsUs() {
 
 	Flight fly;
 	fly.print();
-	//mmm = fly.get_flight();
+	mUser = fly.get_flight();
+}
 
+map<string, string> users::getUser() {
+	return m_users;
 }
 
 //userinfo getuserinfo(string login);

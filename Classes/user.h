@@ -5,12 +5,12 @@
 #include <iostream>
 
 
-//#include "..\\classes\cities.h"
+
 using namespace std;
 
 class users
 {
-	map<string, flight> mmm;
+	map<string, flight> mUser;
 	map<string, string> m_users;
 	const string m_filename = "db\\users.txt";
 public:
@@ -36,5 +36,6 @@ public:
 	void viewticket();
 	void saveticket_to_db();
 	void InToFLightsUs();
+	map<string, string> getUser();
 	~users();
 };
